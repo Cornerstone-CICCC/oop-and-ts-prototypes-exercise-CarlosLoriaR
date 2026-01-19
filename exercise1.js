@@ -4,8 +4,13 @@
 // 2. Define a method called "startEngine" on the prototype of Vehicle that logs "The [make] [model] engine is starting."
 
 
-
-// YOUR CODE HERE
+function Vehicle(make, model) {
+    this.make = make;
+    this.model = model;
+}
+Vehicle.prototype.startEngine = function () {
+    console.log(`The ${this.make} ${this.model} engine is starting.`);
+}
 
 
 
